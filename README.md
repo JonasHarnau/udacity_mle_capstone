@@ -1,10 +1,10 @@
 
 This is the capstone project for my Udacity Machine Learning Engineer Nanodegree. 
-The full project report in pdf form is included in this repository ([click](Project Report.pdf)).
+The full project report in pdf form is included in this repository ([click](https://github.com/JonasHarnau/udacity_mle_capstone/blob/master/Project%20Report.pdf)).
 
 # Abstract
 
-We propose a two-stage model that improves classiﬁcation accuracy compared to a standard convolutional neural network by making use of bounding box data that is available for a small subset of classes where the classes are relatively homogeneous. Speciﬁcally, we apply the model to a dataset of about 22,000 turtle and tortoise images from 22 species; we have bounding box information for some 2,000 images distributed over ﬁve species. The ﬁrst stage is a binary implementation of Faster R-CNN Ren et al. [2017] which has the purpose to detect the turtles or tortoises in the image and puts forward a single region proposal. The second stage model never gets to see the full image but rather only the cropped region proposed by the ﬁrst stage. The model outperforms the benchmark signiﬁcantly, improving top-1 and top-3 error by about 2pp and 1.25pp, respectively.
+We propose a two-stage model that improves classiﬁcation accuracy compared to a standard convolutional neural network by making use of bounding box data that is available for a small subset of classes where the classes are relatively homogeneous. Speciﬁcally, we apply the model to a dataset of about 22,000 turtle and tortoise images from 22 species; we have bounding box information for some 2,000 images distributed over ﬁve species. The ﬁrst stage is a binary implementation of Faster R-CNN (Ren et al., 2017) which has the purpose to detect the turtles or tortoises in the image and puts forward a single region proposal. The second stage model never gets to see the full image but rather only the cropped region proposed by the ﬁrst stage. The model outperforms the benchmark signiﬁcantly, improving top-1 and top-3 error by about 2pp and 1.25pp, respectively.
 
 # Example Output
 Below we show the classification results for the two-stage model as well as for the benchmark for several images. 
